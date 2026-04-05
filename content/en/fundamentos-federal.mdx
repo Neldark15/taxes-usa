@@ -1,0 +1,152 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+import { KeyDate } from '@/components/mdx/KeyDate'
+
+# US Federal Tax System Fundamentals
+
+The US federal tax system is **uniform across all 50 states**: all residents and citizens are taxed under the same federal rules administered by the **Internal Revenue Service (IRS)** and the **Internal Revenue Code (IRC)**. State-level differences only appear in state taxes (covered in the next chapter).
+
+<Callout type="info" title="Key mental model">
+**Federal = same for everyone.** Master the federal system and you have 80% of the job done for any client in any state. States vary in rates, forms, and deadlines, but Form 1040 is the same in Virginia, California, or Texas.
+</Callout>
+
+## Who must file federal taxes?
+
+The filing requirement depends on three factors:
+
+1. **Tax residency status** (not immigration status)
+2. **Filing status** (single, married, etc.)
+3. **Gross income** vs. the filing threshold
+
+### Tax residency
+
+For the IRS, a person is a *US tax resident* if any of the following applies:
+
+- **US Citizen** — US citizen (including those born in USA)
+- **Green Card holder** (lawful permanent resident) — automatically a resident alien
+- **Substantial Presence Test (SPT)** — 31+ days in current year AND formula:
+  - Current year days × 1 + Prior year × 1/3 + Two years ago × 1/6 ≥ 183
+
+<Callout type="warning" title="Important for the diaspora">
+Immigration status does **not determine** tax status. An undocumented Salvadoran living in Virginia IS a resident alien if they meet SPT and MUST file taxes. A **TPS** holder is almost always a tax resident. A **DACA** holder has an SSN and is a tax resident.
+</Callout>
+
+### Filing status
+
+The 5 filing statuses are:
+
+| Status | Who | Notes |
+|---|---|---|
+| **Single** | Single, divorced, legally separated | Default |
+| **Married Filing Jointly (MFJ)** | Married | Best brackets and deductions |
+| **Married Filing Separately (MFS)** | Married filing apart | Loses several credits |
+| **Head of Household (HOH)** | Unmarried supporting a dependent | Better brackets than Single |
+| **Qualifying Surviving Spouse (QSS)** | Widow/er with dependent child | MFJ rates for 2 years |
+
+## Form 1040: the main return
+
+<FormRef id="1040" /> is the federal individual return. Everything is reported here:
+
+### 1040 Flow (simplified)
+
+```
+1. INCOME
+   ↓ wages, interest, dividends, business, capital gains, etc.
+2. ADJUSTMENTS — Schedule 1
+   ↓ IRA, student loan interest, HSA, self-employment deduction
+3. AGI (Adjusted Gross Income)
+   ↓
+4. DEDUCTION (Standard OR Itemized Schedule A)
+   ↓
+5. TAXABLE INCOME
+   ↓ apply brackets
+6. CALCULATED TAX
+   ↓ subtract credits (CTC, EITC, etc.)
+7. TOTAL TAX
+   ↓ vs. withholding + payments
+8. REFUND or BALANCE DUE
+```
+
+### Standard vs. Itemized Deduction
+
+Taxpayer picks the greater of the two:
+
+- **Standard deduction** (annually adjusted, 2024): $14,600 single, $29,200 MFJ, $21,900 HOH
+- **Itemized** (<FormRef id="1040" /> Schedule A): mortgage interest, state/local taxes (capped at $10k), medical >7.5% AGI, charity, casualty
+
+Since the Tax Cuts and Jobs Act (2017), the standard is much higher, so **most diaspora taxpayers use standard**.
+
+## Key credits for the diaspora
+
+Credits are more valuable than deductions because they reduce tax **dollar for dollar**.
+
+<Callout type="tip">
+**Refundable vs nonrefundable**: a refundable credit gives you money back even if you owe no tax. A nonrefundable one can only bring tax to zero.
+</Callout>
+
+### Earned Income Tax Credit (EITC)
+
+- For low/middle-income workers with earned income
+- **Requires a work-valid SSN** for taxpayer and spouse (if MFJ)
+- **ITIN holders do NOT qualify** for federal EITC
+- Up to ~$7,800 with 3+ children (2024)
+
+### Child Tax Credit (CTC) / Additional CTC (ACTC)
+
+- $2,000 per qualifying child under 17
+- **Up to $1,700 refundable** via ACTC (2024)
+- Child must have a **valid SSN** (ITIN does not work for CTC)
+- ITIN holders CAN claim **Credit for Other Dependents** ($500 nonrefundable)
+
+### American Opportunity Credit (AOTC)
+
+- Up to $2,500 per student in the first 4 years of college
+- 40% refundable ($1,000 max)
+- Requires 1098-T
+
+## Self-Employment Tax
+
+Many diaspora clients work as contractors (construction, cleaning, delivery, Uber). They receive <FormRef id="1099-NEC" /> instead of <FormRef id="W-2" />.
+
+- Reported on **Schedule C** (Profit or Loss from Business)
+- **Schedule SE** calculates SE tax: **15.3%** (12.4% SS + 2.9% Medicare) on 92.35% of net income
+- 50% of SE tax is deductible as an adjustment (Schedule 1)
+- **Quarterly estimated taxes** (Form 1040-ES) required if total tax owed will exceed $1,000
+
+<Callout type="danger" title="Common pitfall">
+1099 clients almost always owe taxes in April if they didn't make estimated payments. They can avoid the penalty by meeting the "safe harbor": pay 100% of prior year tax (110% if AGI > $150k) during the year.
+</Callout>
+
+## Key federal deadlines
+
+<KeyDate date="January 31" label="W-2 and 1099 must reach recipients" />
+
+<KeyDate date="April 15" label="Form 1040, Q1 estimated, extension 4868" />
+
+<KeyDate date="June 15" label="Q2 estimated, 1040-NR without wages, Americans abroad" />
+
+<KeyDate date="September 15" label="Q3 estimated" />
+
+<KeyDate date="October 15" label="1040 extended deadline, FBAR final" />
+
+<Callout type="info" title="Form 4868 — Extension">
+Filing <FormRef id="4868" /> before April 15 extends the **filing time** to October 15, but does **NOT extend payment time**. Unpaid taxes accrue interest and a 0.5%/month penalty if not paid by April 15.
+</Callout>
+
+## Withholding and estimated payments
+
+- **W-2 employees**: automatic withholding via Form W-4
+- **1099 contractors**: responsible for their own quarterly estimated taxes
+- **Refund** = you overpaid (withholding + credits > tax calculated)
+- **Balance due** = you underpaid
+
+## Official resources
+
+- **irs.gov** — final authority, forms and publications
+- **Publication 17** — Your Federal Income Tax (free annual IRS guide)
+- **Publication 519** — U.S. Tax Guide for Aliens (key for the diaspora)
+- **Publication 501** — Dependents, Standard Deduction, and Filing Information
+
+---
+
+**Next step**: learn how Virginia adds its own state layer on top of this (chapter 02).

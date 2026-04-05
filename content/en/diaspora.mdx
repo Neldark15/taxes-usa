@@ -1,0 +1,171 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Salvadoran Diaspora Special Cases
+
+This chapter is **the heart of your practice**. Every day you'll see combinations of ITIN, TPS, dependents in El Salvador, FBAR, and remittances. Know the answers before they're asked.
+
+## ITIN — Individual Taxpayer Identification Number
+
+The IRS issues ITINs (format 9XX-XX-XXXX) to people who MUST file taxes but **cannot get an SSN**. Primarily:
+
+- Spouses of US residents without work authorization
+- Dependents living in USA (very restrictive)
+- TPS/DACA people who lost SSN or request it separately
+- **Undocumented** earners of income
+
+### Application process
+
+1. Complete <FormRef id="W-7" />
+2. Attach **identity documents**:
+   - Valid passport (single best option), OR
+   - Two documents from secondary list (birth cert + foreign gov ID, ES driver license, etc.)
+3. **File together with Form 1040** (cannot be standalone except specific cases)
+4. Send to IRS Austin TX (specific ITIN address)
+5. Wait 6-11 weeks
+
+<Callout type="warning" title="Original documents">
+If you send originals, IRS returns them — but losses have happened. Safe options:
+- **Issuer certification** (El Salvador embassy in DC can certify passports)
+- **Certifying Acceptance Agent (CAA)** — certified preparer who makes certified copies
+- **TAC Office** — IRS Taxpayer Assistance Center certifies documents
+</Callout>
+
+### ITINs expire
+
+- If not used on a return in the last 3 years, it **expires**
+- Certain ITIN ranges (middle digits 70-99) already expired in IRS waves
+- Renewal with Form W-7 marking "Renewal"
+
+### What an ITIN holder CAN and CANNOT claim
+
+| Item | ITIN holder |
+|---|---|
+| File 1040 | ✅ Yes |
+| Standard deduction | ✅ Yes |
+| Itemized deduction | ✅ Yes |
+| **EITC (federal)** | ❌ **NO** (requires work-valid SSN) |
+| **CTC/ACTC** | ✅ Yes, if child has valid SSN |
+| Credit for Other Dependents ($500) | ✅ Yes |
+| AOTC (education) | ❌ NO |
+| Saver's Credit | ✅ Yes |
+| Refund | ✅ Yes (from actual overpayment, not EITC) |
+
+## TPS (Temporary Protected Status)
+
+Salvadoran TPS holders (the country has been under TPS since 2001, redesignated periodically):
+
+- **DO have SSN** (not ITIN, because they have work authorization while TPS lasts)
+- Are **resident aliens** for tax purposes if they meet SPT
+- Can claim **EITC** (have work-valid SSN)
+- Can claim **CTC/ACTC**
+- File as any resident alien
+
+<Callout type="success">
+TPS clients are the "easy cases" of the diaspora from a tax standpoint — they have SSN and qualify for all credits. The hard cases are undocumented with ITIN.
+</Callout>
+
+## DACA (Deferred Action for Childhood Arrivals)
+
+- Have **SSN with restriction** (work-valid while DACA lasts)
+- Are resident aliens for tax
+- Qualify for full EITC and CTC
+- File as standard resident alien
+
+## Dependents living in El Salvador
+
+**Critical rule**: a child living in El Salvador with the mother while the father works in USA **does NOT qualify as a dependent** in most cases.
+
+To claim someone as a **qualifying child**:
+
+- Relationship: child, stepchild, sibling, etc.
+- **Age**: under 19 (or under 24 if student)
+- **Residency**: **lived with you more than half the year in USA, Canada, or Mexico**
+- Support: did not provide more than 50% of own support
+- Joint return: does not file joint return
+
+**El Salvador is not on the list** of countries that qualify for the residency test (only USA/Canada/Mexico). That's why dependents in ES almost never qualify as qualifying child.
+
+For **qualifying relative**:
+
+- Dependent's gross income under $5,050 (2024)
+- You provided > 50% of support
+- Not a qualifying child of anyone else
+- Relationship: must be family or household member all year
+- **US citizen, national, or resident of US/Canada/Mexico**
+
+<Callout type="danger" title="Watch parents in El Salvador">
+Even though the client sends monthly money to parents in El Salvador, they CANNOT claim them as dependents unless parents are US citizens or residents. Remittances do not make anyone a tax dependent. Some unscrupulous preparers do this and create huge audit risk.
+</Callout>
+
+## Remittances
+
+- **NOT deductible** for the sender
+- **NOT taxable income** for the recipient (it's a gift)
+- Not reported on sender's 1040
+- Exception: if sending > $18,000/year per person, must report Form 709 (gift tax return), but usually no tax due to $13.6M lifetime exemption
+
+## FBAR — FinCEN 114
+
+**Mandatory** if US tax resident has foreign accounts aggregating > $10,000 USD at ANY point in the year.
+
+### Accounts that count
+
+- Bank accounts (Banco Agrícola, Cuscatlán, Davivienda, Promerica, etc.)
+- Investment accounts
+- Foreign private pensions
+- Joint accounts (counts 100% even if your share is less)
+- Signature authority (even if not owner, you can sign on a business account)
+
+### How to file
+
+- **Does NOT go with the 1040**. Filed electronically at **fincen.gov/bsaefiling**
+- Deadline: **April 15** with **auto-extension to Oct 15** (no extension request needed)
+- No tax — purely informational
+- But **penalties are severe**:
+  - Non-willful: up to $10,000 per violation (can be per account, per year)
+  - Willful: up to $100,000 or 50% of balance, per year
+
+<Callout type="danger" title="FBAR is the biggest trap">
+Many Salvadoran clients keep savings accounts in ES "for emergencies" or "for parents". Always ask. The penalty for unfiled FBAR is larger than 10 years of fees.
+</Callout>
+
+## FATCA — Form 8938
+
+Similar to FBAR but different:
+
+- Filed **with the 1040** (not FinCEN)
+- Much higher threshold: $50k single or $100k MFJ living in US
+- Higher thresholds for Americans living abroad
+- Includes more asset types than FBAR (PFICs, foreign mutual funds)
+- **Can duplicate with FBAR** — file BOTH if applicable
+
+## Foreign Earned Income Exclusion (Form 2555)
+
+- Only applies if taxpayer **lives outside USA** — i.e., for Americans abroad
+- **Does NOT apply to the diaspora** living in USA
+- Excludes up to $126,500 (2024) of foreign earned income if Physical Presence Test (330 days) or Bona Fide Residence Test is met
+
+## Foreign Tax Credit (Form 1116)
+
+- For when a US resident pays tax to El Salvador on the same income
+- Prevents double taxation
+- Typical case: client sells property in ES and pays Salvadoran tax, then must report the gain in USA
+
+## ITIN vs SSN decision matrix
+
+```
+Valid work SSN?
+├── Yes (US citizen, Green Card, TPS, DACA, work visa)
+│   └── Full resident alien → all credits
+└── No
+    ├── Lives in USA with intent to stay?
+    │   └── Resident alien via SPT → full taxation
+    │       └── Uses ITIN → NO EITC, YES CTC if child has SSN
+    └── Temporary visitor?
+        └── Nonresident alien → 1040-NR, different rules
+```
+
+---
+
+**Next**: how to officially become a tax preparer from El Salvador.

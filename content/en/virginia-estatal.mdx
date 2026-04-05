@@ -1,0 +1,183 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+import { KeyDate } from '@/components/mdx/KeyDate'
+
+# Virginia: Form 760 and State Rules
+
+Virginia is the initial focus state because of the high concentration of Salvadoran diaspora in **Northern Virginia** (Arlington, Alexandria, Annandale, Falls Church, Woodbridge, Manassas). Understanding its specific rules is critical because **Virginia is not like federal**: it has its own agency, its own forms, and — most importantly — **its own deadline**.
+
+<Callout type="danger" title="New preparer pitfall #1">
+Virginia is due on <strong>May 1</strong>, not April 15. New preparers assume all state deadlines match federal. Mark this in red.
+</Callout>
+
+## Virginia Department of Taxation
+
+The agency is **Virginia Department of Taxation** (tax.virginia.gov), completely separate from the IRS. It has:
+
+- Its own e-file system (Virginia Tax Online Services)
+- Its own 760-series forms
+- Its own audits
+- Its own rates and thresholds
+
+Don't confuse it with **Virginia Employment Commission** (unemployment, 1099-G) or **local Commissioner of the Revenue** (local taxes like business licenses).
+
+## Who must file in Virginia?
+
+Virginia distinguishes three types of taxpayers:
+
+### 1. Resident — <FormRef id="VA-760" />
+
+A person is a **resident** if:
+
+- They are **domiciled** in Virginia (permanent home), OR
+- They are a **statutory resident**: maintain a "place of abode" in VA for **more than 183 days** of the year
+
+Domiciliaries pay VA tax on **worldwide income** (all income, anywhere).
+
+### 2. Part-Year Resident — Form 760PY
+
+Moved to/from Virginia during the year. Splits income between VA and non-VA periods.
+
+### 3. Nonresident — Form 763
+
+Lives outside VA but had VA-source income (e.g., remote work with a VA employer, rental in VA). Only taxed on VA-source income.
+
+<Callout type="warning" title="Immigration status ≠ VA tax residency">
+A Salvadoran with an ITIN who lives permanently in Annandale IS a Virginia resident for tax purposes, regardless of immigration status. Virginia accepts ITINs and does not ask about immigration status.
+</Callout>
+
+## Virginia rates (2024)
+
+Virginia uses a progressive 4-bracket system:
+
+| Taxable Income | Rate |
+|---|---|
+| $0 – $3,000 | **2%** |
+| $3,001 – $5,000 | **3%** + $60 |
+| $5,001 – $17,000 | **5%** + $120 |
+| $17,001 + | **5.75%** + $720 |
+
+Top rate: **5.75%**. This is moderate: lower than MD (5.75% + local), NY (up to 10.9%), CA (up to 13.3%); higher than no-income-tax states (FL, TX).
+
+## Starting point: federal AGI
+
+Virginia starts from **Federal Adjusted Gross Income (FAGI)** and applies adjustments (additions and subtractions). That means: **if federal is done right, VA is 80% automatic**.
+
+### Common additions (increase VA income)
+
+- Interest on obligations of other states (tax-free federal, taxable VA)
+- Lump-sum distributions
+- Losses from years when not a VA resident
+
+### Common subtractions (decrease VA income)
+
+- **Age deduction** for 65+
+- **Disability income** up to $20,000
+- **Social Security benefits** — Virginia **does NOT tax** Social Security (big advantage)
+- Military basic pay (limited)
+- Virginia 529 contributions
+
+## VA deductions and credits
+
+### VA standard deduction
+
+- $8,500 single (2024)
+- $17,000 MFJ
+
+Virginia also allows itemized, but it must match the federal choice (if itemized federally → must itemize in VA).
+
+### Credit for Taxes Paid to Other States
+
+If the taxpayer is a VA resident but paid tax to another state (e.g., works in MD), they get a **credit for the lesser** of what was paid to the other state or what VA would have charged on that income.
+
+<Callout type="info" title="Reciprocity: VA-DC-MD-KY-PA-WV">
+Virginia has a **reciprocity agreement** with **DC, Maryland, Kentucky, Pennsylvania, and West Virginia**. This means:
+- If you live in VA and work in one of these states, you only pay VA tax on your wages
+- The employer in the other state should NOT withhold their state tax
+- The employee files **Form VA-4** with the employer (or that state's equivalent to claim exemption)
+- If the employer mistakenly withheld, the employee claims refund using the nonresident form of that state
+
+This is **enormously relevant in Northern Virginia**: thousands of Arlington/Alexandria residents work in DC. They only file in VA.
+</Callout>
+
+### Virginia EITC
+
+Since 2022 Virginia offers a **refundable 15% of federal EITC** (taxpayer can choose between 15% refundable or 20% nonrefundable). Must qualify for federal EITC first — which **requires a work-valid SSN**. ITIN holders do not qualify.
+
+### Low Income Individuals Credit (CLI)
+
+Nonrefundable credit for taxpayers below the federal poverty line. $300 per claimed exemption.
+
+## Local taxes in Virginia
+
+Virginia has very few local income taxes (unlike MD where each county adds 2-3%). But it does have:
+
+- **Real estate tax** (property, paid to county/city)
+- **Personal property tax** (vehicles, each county)
+- **BPOL tax** (Business, Professional, Occupational License) if the client has a business
+
+As an income tax preparer, this doesn't directly concern you, but you should know about it to advise business clients.
+
+## Sales tax in Virginia
+
+5.3% base + 0.7% in certain localities (Northern Virginia, Hampton Roads) = **6%** in NOVA. 2.5% on groceries. Does not apply to professional services. As a preparer, if your client has retail, make sure they have a sales tax permit with VA Tax.
+
+## Virginia deadlines
+
+<KeyDate date="May 1" label="Form 760 deadline (NOT April 15)" />
+
+<KeyDate date="November 1" label="Automatic extension up to 6 months" />
+
+- **Extension**: Virginia automatically grants a **6-month extension** without any form, but the estimated payment must be made by May 1 (Form 760IP)
+- **Estimated payments**: May 1, June 15, September 15, January 15 (quarters slightly shifted vs federal)
+
+<Callout type="success" title="Best practice">
+When you prepare the federal 1040 in March/April, prepare the 760 at the same time but **wait to file until you've verified federal was accepted by the IRS**. This avoids rework if corrections are needed.
+</Callout>
+
+## Virginia e-file
+
+Virginia requires e-file if you prepare 50+ returns per year (federal threshold is 10+). Most professional software (Drake, TaxSlayer Pro, ProSeries) includes VA e-file integrated.
+
+## VA penalties
+
+- **Late filing**: 6% of balance due per month, up to 30% max
+- **Late payment**: 6% annual interest + 6% penalty
+- **Underestimation**: if estimated payments don't reach 90% of actual
+- **Fraud**: 100% of underpayment + criminal charges
+
+## VA filing threshold (2024)
+
+Must file if Virginia AGI >:
+
+| Filing status | Threshold |
+|---|---|
+| Single | $11,950 |
+| MFJ | $23,900 |
+| Married dependent | $5,950 |
+
+Below these thresholds filing is not mandatory, but it's a good idea if any withholding was taken to recover it as a refund.
+
+## Virginia forms — summary
+
+| Form | Use |
+|---|---|
+| **760** | Full-year resident |
+| **760PY** | Part-year resident |
+| **763** | Nonresident (with VA-source income) |
+| **763-S** | Nonresident Withholding Refund Claim (reciprocity) |
+| **760C** | Underpayment of Estimated Tax |
+| **760IP** | Automatic Extension Payment |
+| **VA-4** | Employee's Withholding Certificate (W-4 equivalent) |
+| **500** | Corporation Income Tax Return |
+| **502** | Pass-Through Entity Return |
+
+## Official resources
+
+- **tax.virginia.gov** — official authority
+- **Virginia Tax Agency Directive** — legal interpretations
+- **Virginia Publication** — topic-specific guides
+
+---
+
+**Next**: how to handle other states as your practice grows beyond Virginia.

@@ -1,0 +1,176 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Setting Up the Business: Legal Structure
+
+Three options to operate your US tax prep business from El Salvador.
+
+## Option A — El Salvador company only
+
+Register a Sociedad Anónima or simply operate as a natural person with NIT in El Salvador.
+
+### Pros
+
+- Simple and familiar
+- No US compliance
+- No registered agent costs
+- Invoice in USD from ES (exported service → potential 13% IVA exemption)
+- ES income tax: 30% on profits
+
+### Cons
+
+- **US clients may distrust** paying a foreign company
+- International transfers are slower/more expensive
+- No "US presence" for marketing
+- Some larger clients will ask for W-9 (which you can't properly give without EIN)
+
+### When it makes sense
+
+- Starting out, few clients
+- All referred clients (trust already established)
+- Not planning to scale soon
+
+## Option B — US LLC ⭐ RECOMMENDED
+
+**Limited Liability Company** single-member (SMLLC) with you as sole non-resident owner.
+
+### Which state to choose
+
+| State | Pros | Cons | Annual cost |
+|---|---|---|---|
+| **Wyoming (WY)** ⭐ | Cheapest, high privacy, no owner disclosure | — | ~$60 annual report |
+| **Delaware (DE)** | Corporate prestige, specialized courts | More expensive, franchise tax $300+ | $300+ |
+| **New Mexico (NM)** | Even cheaper, total privacy | Less prestige | $0 annual (requires reseller/agent) |
+| **Florida (FL)** | Good reputation, no state tax | $138.75 annual report | $138 |
+
+**Wyoming** is the typical choice for non-residents prioritizing low cost + privacy. Delaware has more "prestige" but is 5x more expensive.
+
+### Do NOT pick Virginia for the LLC
+
+Even though your clients may be in Virginia, **do NOT form the LLC in VA** to start. VA has:
+
+- Annual report fee ($50)
+- Requires physical address in VA (your registered agent)
+- BPOL tax (local professional license) in some localities
+
+VA only makes sense if you'll have physical presence or employees there.
+
+### Steps to form a Wyoming LLC
+
+1. **Choose a name** (check availability at wyoming.gov/sos)
+2. **Registered Agent in WY** (mandatory):
+   - Northwest Registered Agent ($125/year)
+   - Harbor Compliance ($89/year)
+   - Incfile ($119/year)
+   - Recommendation: Northwest for mail forwarding service
+3. **File Articles of Organization** — online, ~$100
+4. **Get EIN from IRS** — critical, see below
+5. **Operating Agreement** — private but recommended
+6. **Open US bank account**
+7. **Beneficial Ownership Information (BOI)** — new FinCEN reporting (currently in legal dispute, verify status in 2025+)
+
+### Getting EIN without SSN
+
+The EIN (Employer Identification Number) is the LLC's tax ID. **Without EIN you can't open a bank account or do business taxes**.
+
+**Problem**: the IRS online form asks for the responsible party's SSN.
+
+**Solution**: <FormRef id="SS-4" /> on paper + fax
+
+1. Complete Form SS-4
+2. On line 7b (responsible party SSN), write "Foreign"
+3. Send by **fax** to IRS:
+   - International Fax: +1 (855) 215-1627 (may change, check on irs.gov)
+4. Wait 4-6 weeks (mail also works but slower)
+5. Receive CP 575 notice with EIN
+
+<Callout type="success" title="Third-party services">
+Services like Doola, Firstbase, StartPack or Wise Business do this whole process (LLC + EIN) for $300-500 in 3-4 weeks. Worth the cost to avoid SS-4 errors.
+</Callout>
+
+### Opening a US bank account without traveling
+
+Banks that accept non-resident LLCs online:
+
+- **Mercury** (mercury.com) — fintech, free, very popular for foreign LLCs, requires EIN
+- **Relay** (relayfi.com) — similar to Mercury
+- **Wise Business** — multi-currency, useful if clients pay in USD
+- **Bluevine** — also non-resident friendly
+
+Traditional banks (Chase, BofA, Wells) **almost always require in-person branch visit** and SSN or ITIN. Not viable without travel.
+
+### Form 5472 + 1120 pro-forma — CRITICAL
+
+<Callout type="danger" title="$25,000 penalty">
+Every Single-Member LLC with a foreign owner is treated as a "disregarded entity" for income tax, BUT must file <FormRef id="5472" /> every year + a "pro-forma" Form 1120 (with only identification info).
+
+**Penalty for non-filing: $25,000 per year**. This is the biggest and most expensive trap of a non-resident LLC.
+</Callout>
+
+- Form 5472 reports transactions between the LLC and the foreign owner (transfers, loans, payments, distributions)
+- Filed **together with** Form 1120 on paper (no e-file) to IRS Ogden UT
+- Deadline: Apr 15 (with extension via Form 7004 to Oct 15)
+- MANDATORY even if the LLC had no income or significant activity
+
+### LLC income tax
+
+- SMLLC with foreign owner = **disregarded entity**
+- Income "flows through" to owner as nonresident alien
+- **If the service is performed entirely outside USA** (you in El Salvador), generally NO ECI (Effectively Connected Income) → NO federal US income tax
+- BUT this area is complex — consult a CPA specialized in non-residents before assuming
+- Possible need for personal ITIN if there's US-source income
+
+## Option C — Hybrid (recommended medium-term)
+
+Dual structure:
+
+1. **Wyoming LLC** (commercial arm for US clients):
+   - Has EIN, US bank account
+   - Invoices services to US clients
+   - Revenue lands in the LLC
+2. **Company in El Salvador** (actual operation):
+   - Where you live and work
+   - The LLC pays a "management fee" to the ES company for services rendered
+   - Taxes paid in ES on profit
+
+This structure requires bilateral bookkeeping and fair transfer pricing, but is optimal to scale.
+
+## E&O insurance (Errors and Omissions)
+
+**CRITICAL**. Every preparer must have it.
+
+- Covers lawsuits for errors in prepared returns
+- Cost: $400-800/year (starting)
+- Providers: PICPA, Accountants Professional Liability, Hiscox, 360 Coverage Pros
+- **Some providers require US address** — verify before forming the LLC
+
+## Cyber liability insurance
+
+- Covers data breaches (clients have SSN and sensitive documents)
+- ~$300-500/year
+- MANDATORY under **FTC Safeguards Rule** (applies to all preparers)
+
+## Engagement letter
+
+Contract with each client defining:
+
+- Services included
+- Fees and payment terms
+- Client responsibilities (provide truthful documents)
+- Your liability limitation
+- Data privacy
+- Jurisdiction (if WY LLC, specify)
+
+Templates available at: AICPA, NATP, your software (TaxDome includes templates).
+
+## GLBA Privacy — Gramm-Leach-Bliley Act
+
+Applies to preparers because they are "financial institutions" per the FTC:
+
+- Must have **Privacy Notice** for clients
+- **WISP** (Written Information Security Plan) — see ch. 10
+- Data breach notification if it occurs
+
+---
+
+**Next**: the professional software and tools stack.

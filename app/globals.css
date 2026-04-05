@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #ffffff;
+    color: #111111;
+    min-height: 100vh;
+  }
+
+  .dark body {
+    background: #0a0a0a;
+    color: #e5e5e5;
+  }
+}
+
+@layer components {
+  .glass {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+  }
+
+  .dark .glass {
+    background: #141414;
+    border-color: #262626;
+  }
+
+  .glass-subtle {
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+  }
+
+  .dark .glass-subtle {
+    background: #1a1a1a;
+    border-color: #262626;
+  }
+}
+
+/* Print */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header, footer, nextjs-portal {
+    display: none !important;
+  }
+
+  button[type="button"] {
+    display: none !important;
+  }
+
+  .glass, .glass-subtle {
+    background: white !important;
+    border: 1px solid #d4d4d4 !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, div, li, td, th {
+    color: black !important;
+  }
+
+  input[type="checkbox"] {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  section, article, .glass {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #525252;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}

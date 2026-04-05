@@ -1,0 +1,203 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Compliance y gestión de riesgos
+
+Lo que te mantiene fuera de problemas legales. Violaciones aquí cuestan dinero, credencial y reputación.
+
+## Circular 230 — la biblia del preparador
+
+Treasury Department Circular 230 es el documento que regula a los preparadores de impuestos. Puntos clave:
+
+### Duties (Subpart B)
+
+- Pronta presentación de returns
+- Uso de "best practices"
+- No cobrar honorarios abusivos
+- Notificar errores a clientes
+- No omitir información requerida
+
+### Restrictions (Subpart B)
+
+- No negotiate refund checks del cliente
+- No preparar return si sabes que contiene información falsa
+- No cobrar contingent fees en returns originales
+- No solicitar información del cliente con engaño
+
+### Sanctions (Subpart D)
+
+- Censure (reprimenda pública)
+- Suspension (hasta 5 años)
+- Disbarment (permanente)
+- Monetary penalties
+
+**Debes leer Circular 230 al menos una vez completa**. Es ~80 páginas en inglés, disponible en irs.gov.
+
+## Form 8867 — Due Diligence para créditos refundables
+
+<Callout type="danger" title="$635 penalty por cada omisión (2024)">
+Cuando reclamas EITC, CTC, ACTC, AOTC, o HOH filing status, DEBES completar Form 8867 para cada return. Cada omisión = **$635 penalty por cada crédito por cada return**.
+
+Un return con CTC + EITC + AOTC mal documentado = **$1,905 de penalty**. Por un solo cliente.
+</Callout>
+
+### Qué requiere 8867
+
+1. **Interview del cliente** sobre elegibilidad
+2. **Review de documentos** que sustentan la elegibilidad
+3. **Knowledge requirement** — pueden considerarse los hechos como razonables
+4. **Documentation retention** — guardar el 8867 y soportes 3 años
+
+### Preguntas obligatorias
+
+Para EITC con hijo calificador:
+
+- ¿El niño vivió contigo más de la mitad del año?
+- ¿Qué documentación tienes (school records, medical, childcare)?
+- ¿Alguien más puede reclamar este niño?
+- ¿El niño proveyó más del 50% de su propio mantenimiento?
+
+Para HOH:
+
+- ¿Estás casado? Si sí, ¿viviste separado los últimos 6 meses?
+- ¿Pagaste más del 50% de mantener el hogar?
+- ¿Hay un qualifying person que vive contigo?
+
+### Documentos de respaldo comunes
+
+- School records (address del niño)
+- Medical records
+- Childcare records
+- Social security cards
+- Birth certificates
+- Lease/utility bills (HOH)
+
+## §6694 — Understatement Penalties
+
+Si preparas un return con understatement de tax (cliente debe más que lo reportado):
+
+- **Negligent**: $1,000 or 50% del fee por el return (el mayor)
+- **Willful**: $5,000 or 75% del fee
+
+### Cómo protegerse
+
+- **Reasonable basis**: posición tiene al menos 25% de probabilidad de ser correcta
+- **Substantial authority**: posición tiene 40%+ de probabilidad
+- **Más verosímil que no**: posición es >50%
+- **Disclosure** en Form 8275 si la posición es "reasonable basis" pero controversial
+
+## §6695 — Other Preparer Penalties
+
+Varias violaciones con penalties de $60 cada una (2024):
+
+- **§6695(a)**: Failure to furnish copy of return to taxpayer
+- **§6695(b)**: Failure to sign the return
+- **§6695(c)**: Failure to furnish PTIN on return
+- **§6695(d)**: Failure to retain copy or list
+- **§6695(e)**: Failure to file correct information returns
+- **§6695(f)**: Negotiating a check from IRS (refund) — $635
+- **§6695(g)**: Failure to be diligent with EITC/CTC/AOTC/HOH — $635
+
+Estas son simples pero acumulativas. Si haces 100 returns y omites PTIN en todos = $6,000 de penalty.
+
+## E-file mandate
+
+- **11+ returns al año** → obligatorio e-filear
+- Excepciones: cliente pide paper, return tiene adjuntos que no soportan e-file, problemas técnicos
+- Violación: $50/return hasta $25,000 max
+
+## Data Security — IRS Pub 4557 + FTC Safeguards Rule
+
+### WISP obligatorio
+
+**Written Information Security Plan**. Desde 2023 es obligatorio para todos los preparadores.
+
+Debe incluir:
+
+- Designación de un "qualified individual" (puedes ser tú mismo si solo trabajas)
+- Risk assessment anual
+- Safeguards específicos (encryption, access control, monitoring)
+- Vendor management
+- Incident response plan
+- Security awareness training
+- Continuous monitoring
+
+Template gratuito: irs.gov/Publication 5708
+
+### Safeguards técnicos mínimos
+
+- 2FA en todo sistema con datos de clientes
+- Passwords complejas (12+ caracteres)
+- Disk encryption (BitLocker/FileVault)
+- Network firewall
+- Antivirus actualizado
+- VPN para conexiones remotas
+- Backup encriptado offsite
+- Auto-lock después de 15 min inactividad
+- Uso de HTTPS exclusivamente
+- Secure deletion de datos obsoletos
+
+### Data breach response
+
+Si sufres breach de datos de clientes:
+
+1. **Contener** el incidente (cambiar passwords, aislar sistemas)
+2. **Contactar al IRS Stakeholder Liaison** — toma en serio esto
+3. **Contactar a FTC** si aplica
+4. **Notificar a clientes afectados** (FTC requiere dentro de 30 días en muchos casos)
+5. **Contactar a tu E&O insurance** inmediatamente
+6. **Consultar con abogado** especializado en data breach
+
+## Knowledge of client fraud
+
+Si descubres que el cliente te dio información falsa:
+
+- **NO firmes el return** si sabes que hay falsedades
+- **Informa al cliente** — tienen oportunidad de corregir
+- Si el cliente insiste en presentar con falsedades: **termina la relación**
+- Documenta todo
+- NO reportes al IRS unilateralmente (confidencialidad salvo que law enforcement pregunte)
+
+## Form 8300 — Reporte de efectivo
+
+Si recibes > $10,000 en efectivo o equivalente (money orders, cashier's checks) de un cliente:
+
+- Debes presentar Form 8300 al IRS dentro de 15 días
+- También notificar al cliente
+- Esta regla aplica a preparadores igual que a otros negocios
+
+## Retención de records
+
+- **Returns preparados**: 3 años mínimo (IRS)
+- **8867 y due diligence docs**: 3 años
+- **Engagement letters**: 3-7 años
+- **WISP y security docs**: indefinido
+- **Algunos estados requieren más** (NY 6 años, MD 4)
+
+## Preparer Misconduct / IRS OPR
+
+**Office of Professional Responsibility** del IRS maneja disciplinary actions contra preparadores. Si un cliente te reporta:
+
+1. OPR investiga
+2. Si hay mérito, envía aviso de cargos
+3. Proceso administrativo (como corte pero sin jurado)
+4. Penalty puede ser censure, suspension, disbarment, monetary
+
+**Cómo evitar esto**: sigue Circular 230 a la letra, documenta todo, mantén engagement letters firmados.
+
+## Checklist anual de compliance
+
+- [ ] PTIN renewed
+- [ ] AFSP CE completado (si aplica)
+- [ ] E&O insurance vigente
+- [ ] Cyber liability vigente
+- [ ] WISP revisado y actualizado
+- [ ] Passwords rotados
+- [ ] Backup verificado
+- [ ] Vendor agreements revisados
+- [ ] Engagement letter templates actualizados (year-specific)
+- [ ] Pricing sheet actualizado
+
+---
+
+**Siguiente**: el calendario fiscal completo del año para nunca perder un deadline.

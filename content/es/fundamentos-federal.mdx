@@ -1,0 +1,152 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+import { KeyDate } from '@/components/mdx/KeyDate'
+
+# Fundamentos del sistema fiscal federal de USA
+
+El sistema fiscal federal estadounidense es **único en los 50 estados**: todos los residentes y ciudadanos tributan bajo las mismas reglas federales administradas por el **Internal Revenue Service (IRS)** y el **Internal Revenue Code (IRC)**. Las diferencias entre estados aparecen solo a nivel de impuestos estatales (cubiertos en el próximo capítulo).
+
+<Callout type="info" title="Regla mental clave">
+**Federal = mismo para todos.** Si aprendes bien el sistema federal, tienes el 80% del trabajo hecho para cualquier cliente en cualquier estado. Los estados varían en tasas, formularios y deadlines, pero el Form 1040 es el mismo en Virginia, California o Texas.
+</Callout>
+
+## ¿Quién debe presentar impuestos federales?
+
+La obligación de presentar (filing requirement) depende de tres factores:
+
+1. **Estatus de residencia fiscal** (no migratorio)
+2. **Filing status** (soltero, casado, etc.)
+3. **Ingreso bruto** vs. el umbral (filing threshold)
+
+### Residencia fiscal
+
+Para el IRS, una persona es *US tax resident* si cumple uno de estos:
+
+- **US Citizen** — ciudadano estadounidense (incluye nacidos en USA)
+- **Green Card holder** (lawful permanent resident) — automáticamente resident alien
+- **Substantial Presence Test (SPT)** — 31+ días en el año actual Y fórmula:
+  - Días año actual × 1 + Días año anterior × 1/3 + Días hace 2 años × 1/6 ≥ 183
+
+<Callout type="warning" title="Importante para la diáspora">
+El status migratorio **no determina** el status fiscal. Un salvadoreño indocumentado que vive en Virginia SÍ es resident alien si cumple SPT y DEBE presentar taxes. Un titular de **TPS** casi siempre es residente fiscal. Un **DACA** holder tiene SSN y es residente fiscal.
+</Callout>
+
+### Filing status
+
+Los 5 filing statuses son:
+
+| Status | Quién | Notas |
+|---|---|---|
+| **Single** | Solteros, divorciados, separados legalmente | Default |
+| **Married Filing Jointly (MFJ)** | Casados | Mejores brackets y deducciones |
+| **Married Filing Separately (MFS)** | Casados que presentan aparte | Pierden varios créditos |
+| **Head of Household (HOH)** | No casados que mantienen a un dependiente | Brackets mejores que Single |
+| **Qualifying Surviving Spouse (QSS)** | Viudo/a con hijo dependiente | Tasas de MFJ por 2 años |
+
+## Form 1040: la declaración principal
+
+El <FormRef id="1040" /> es la declaración individual federal. Aquí se reporta todo:
+
+### Flujo del 1040 (simplificado)
+
+```
+1. INGRESOS (Income)
+   ↓ wages, interest, dividends, business, capital gains, etc.
+2. AJUSTES (Adjustments) — Schedule 1
+   ↓ IRA, student loan interest, HSA, self-employment deduction
+3. AGI (Adjusted Gross Income)
+   ↓
+4. DEDUCCIÓN (Standard O Itemized Schedule A)
+   ↓
+5. INGRESO GRAVABLE (Taxable Income)
+   ↓ aplicar brackets
+6. IMPUESTO CALCULADO
+   ↓ restar créditos (CTC, EITC, etc.)
+7. IMPUESTO TOTAL
+   ↓ vs. retenciones + pagos
+8. REFUND o BALANCE DUE
+```
+
+### Standard vs. Itemized Deduction
+
+El contribuyente elige el mayor de los dos:
+
+- **Standard deduction** (ajustada anualmente, 2024): $14,600 single, $29,200 MFJ, $21,900 HOH
+- **Itemized** (<FormRef id="1040" /> Schedule A): mortgage interest, state/local taxes (capped at $10k), medical >7.5% AGI, charity, casualty
+
+Desde el Tax Cuts and Jobs Act (2017) la standard es mucho más alta, por lo que **la mayoría de contribuyentes de la diáspora usan standard**.
+
+## Créditos clave para la diáspora
+
+Los créditos son más valiosos que las deducciones porque reducen el impuesto **dólar por dólar**.
+
+<Callout type="tip">
+**Refundable vs nonrefundable**: un crédito reembolsable (refundable) te da dinero incluso si no debes impuestos. Uno no reembolsable solo puede llegar a cero.
+</Callout>
+
+### Earned Income Tax Credit (EITC)
+
+- Para trabajadores de bajos/medianos ingresos con earned income
+- **Requiere SSN válido para trabajo** del taxpayer y spouse (si MFJ)
+- **ITIN holders NO califican** para EITC federal
+- Hasta ~$7,800 con 3+ hijos (2024)
+
+### Child Tax Credit (CTC) / Additional CTC (ACTC)
+
+- $2,000 por hijo calificador menor de 17
+- **Hasta $1,700 refundable** vía ACTC (2024)
+- Hijo debe tener **SSN válido** (ITIN no sirve para CTC)
+- ITIN holders SÍ pueden reclamar **Credit for Other Dependents** ($500 no reembolsable)
+
+### American Opportunity Credit (AOTC)
+
+- Hasta $2,500 por estudiante en los primeros 4 años de college
+- 40% reembolsable ($1,000 max)
+- Requiere 1098-T
+
+## Self-Employment Tax
+
+Muchos clientes de la diáspora trabajan como contratistas (construcción, limpieza, delivery, Uber). Reciben <FormRef id="1099-NEC" /> en vez de <FormRef id="W-2" />.
+
+- Se reporta en **Schedule C** (Profit or Loss from Business)
+- **Schedule SE** calcula el SE tax: **15.3%** (12.4% SS + 2.9% Medicare) sobre el 92.35% del net income
+- El 50% del SE tax es deducible como ajuste (Schedule 1)
+- **Quarterly estimated taxes** (Form 1040-ES) obligatorios si el total owed será > $1,000
+
+<Callout type="danger" title="Trampa común">
+Los clientes 1099 casi siempre deben impuestos en abril si no hicieron estimated taxes. Pueden evitar la penalty cumpliendo el "safe harbor": pagar 100% del impuesto del año anterior (110% si AGI > $150k) durante el año.
+</Callout>
+
+## Deadlines federales clave
+
+<KeyDate date="January 31" label="W-2 y 1099 deben llegar a recipients" />
+
+<KeyDate date="April 15" label="Form 1040, Q1 estimated, extensión 4868" />
+
+<KeyDate date="June 15" label="Q2 estimated, 1040-NR sin wages, Americans abroad" />
+
+<KeyDate date="September 15" label="Q3 estimated" />
+
+<KeyDate date="October 15" label="1040 extended deadline, FBAR final" />
+
+<Callout type="info" title="Form 4868 — Extensión">
+Presentar <FormRef id="4868" /> antes del 15 de abril extiende el **tiempo de presentación** hasta el 15 de octubre, pero **NO extiende el tiempo de pago**. Los impuestos adeudados generan intereses y penalty del 0.5%/mes si no se pagan antes del 15 de abril.
+</Callout>
+
+## Retenciones y pagos estimados
+
+- **W-2 employees**: retención automática vía Form W-4
+- **1099 contractors**: responsables de sus propios estimated taxes trimestrales
+- **Refund** = pagaste de más (retención + créditos > impuesto calculado)
+- **Balance due** = pagaste de menos
+
+## Recursos oficiales
+
+- **irs.gov** — autoridad final, formularios y publications
+- **Publication 17** — Your Federal Income Tax (guía anual gratuita del IRS)
+- **Publication 519** — U.S. Tax Guide for Aliens (clave para la diáspora)
+- **Publication 501** — Dependents, Standard Deduction, and Filing Information
+
+---
+
+**Siguiente paso**: aprende cómo Virginia agrega su propia capa estatal sobre esto (capítulo 02).

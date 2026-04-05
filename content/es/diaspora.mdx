@@ -1,0 +1,171 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Casos especiales de la diáspora salvadoreña
+
+Este capítulo es **el corazón de tu práctica**. Todos los días verás combinaciones de ITIN, TPS, dependientes en El Salvador, FBAR, y remesas. Conoce las respuestas antes de que te las pregunten.
+
+## ITIN — Individual Taxpayer Identification Number
+
+El IRS emite ITINs (formato 9XX-XX-XXXX) a personas que DEBEN presentar taxes pero **no pueden obtener SSN**. Principalmente:
+
+- Cónyuges de residentes US sin autorización de trabajo
+- Dependientes que viven en USA (muy restrictivo)
+- Personas bajo TPS/DACA que perdieron SSN, o lo solicitan aparte
+- **Indocumentados** que ganan income
+
+### Proceso de obtención
+
+1. Completar <FormRef id="W-7" />
+2. Adjuntar **documentos de identidad**:
+   - Passport válido (opción única y mejor), O
+   - Dos documentos de lista secundaria (birth cert + foreign gov ID, driver license de ES, etc.)
+3. **Presentar junto con el Form 1040** (no puede ser standalone excepto casos específicos)
+4. Enviar a IRS Austin TX (dirección específica para ITIN)
+5. Esperar 6-11 semanas
+
+<Callout type="warning" title="Documentos originales">
+Si envías documentos originales, el IRS los devuelve — pero ha habido pérdidas. Las opciones seguras:
+- **Certificación por el emisor** (embajada de El Salvador en DC puede certificar passports)
+- **Certifying Acceptance Agent (CAA)** — preparador certificado para hacer copias certificadas
+- **TAC Office** — el IRS Taxpayer Assistance Center certifica documentos
+</Callout>
+
+### ITINs expiran
+
+- Si no se usa el ITIN en un return en los últimos 3 años, **expira**
+- Ciertos rangos de ITINs (middle digits 70-99) ya expiraron en rondas del IRS
+- Renovación con Form W-7 marcando "Renewal"
+
+### Qué SÍ y qué NO puede reclamar un ITIN holder
+
+| Item | ITIN holder |
+|---|---|
+| Presentar 1040 | ✅ Sí |
+| Standard deduction | ✅ Sí |
+| Itemized deduction | ✅ Sí |
+| **EITC (federal)** | ❌ **NO** (requiere SSN válido para trabajo) |
+| **CTC/ACTC** | ✅ Sí, si el hijo tiene SSN válido |
+| Credit for Other Dependents ($500) | ✅ Sí |
+| AOTC (education) | ❌ NO |
+| Saver's Credit | ✅ Sí |
+| Refund | ✅ Sí (de overpayment real, no EITC) |
+
+## TPS (Temporary Protected Status)
+
+Titulares de TPS salvadoreño (el país estuvo bajo TPS desde 2001, re-designado periódicamente):
+
+- **SÍ tienen SSN** (no ITIN, porque tienen autorización de trabajo mientras dure el TPS)
+- Son **resident aliens** para efectos fiscales si cumplen SPT
+- Pueden reclamar **EITC** (tienen SSN válido para trabajo)
+- Pueden reclamar **CTC/ACTC**
+- Declaran como cualquier resident alien
+
+<Callout type="success">
+Los clientes TPS son los "easy cases" de la diáspora desde el punto de vista fiscal — tienen SSN y califican para todos los créditos. Los casos difíciles son los indocumentados con ITIN.
+</Callout>
+
+## DACA (Deferred Action for Childhood Arrivals)
+
+- Tienen **SSN con restricción** (válido for-work mientras dure DACA)
+- Son resident aliens fiscales
+- Califican para EITC y CTC completos
+- Declaran como resident alien estándar
+
+## Dependientes viviendo en El Salvador
+
+**Regla crítica**: un hijo viviendo en El Salvador con la madre mientras el padre trabaja en USA **NO califica como dependiente** en la mayoría de casos.
+
+Para reclamar a alguien como **qualifying child**:
+
+- Relationship: hijo, hijastro, hermano, etc.
+- **Age**: menor de 19 (o menor de 24 si es estudiante)
+- **Residency**: **vivió contigo más de la mitad del año en USA, Canadá o México**
+- Support: no proveyó más del 50% de su propio mantenimiento
+- Joint return: no presenta return conjunto
+
+**El Salvador no está en la lista** de países que califican para residency test (solo USA/Canadá/México). Por eso dependientes en ES casi nunca califican como qualifying child.
+
+Para **qualifying relative**:
+
+- Gross income del dependiente menor a $5,050 (2024)
+- Tú proveíste > 50% de su mantenimiento
+- No es qualifying child de nadie más
+- Relationship: debe ser familiar o miembro del household todo el año
+- **US citizen, national, o resident of US/Canada/Mexico**
+
+<Callout type="danger" title="Cuidado con padres en El Salvador">
+Aunque el cliente envía dinero mensual a sus padres en El Salvador, NO puede reclamarlos como dependientes salvo que los padres sean ciudadanos US o residentes. Las remesas no convierten a nadie en dependiente fiscal. Algunos preparadores malintencionados hacen esto y generan audit risk enorme.
+</Callout>
+
+## Remesas
+
+- **NO son deducibles** para el que las envía
+- **NO son ingreso gravable** para el que las recibe (es un regalo)
+- No se reportan en el 1040 del remitente
+- Excepción: si envía > $18,000/año por persona, debe reportar Form 709 (gift tax return), pero generalmente no hay impuesto por el lifetime exemption de $13.6M
+
+## FBAR — FinCEN 114
+
+**Obligatorio** si el US tax resident tiene cuentas extranjeras que agregaron > $10,000 USD en CUALQUIER momento del año.
+
+### Cuentas que cuentan
+
+- Cuentas bancarias (Banco Agrícola, Cuscatlán, Davivienda, Promerica, etc.)
+- Cuentas de inversión
+- Pensiones privadas extranjeras
+- Cuentas conjuntas (cuenta el 100% aunque tu parte sea menor)
+- Signature authority (aunque no seas dueño, puedes firmar en una cuenta de negocio)
+
+### Cómo se presenta
+
+- **NO va con el 1040**. Se presenta electrónicamente en **fincen.gov/bsaefiling**
+- Deadline: **April 15** con **auto-extensión hasta Oct 15** (no requiere pedir extensión)
+- No hay impuesto — es puramente informativo
+- Pero las **penalidades son severas**:
+  - Non-willful: hasta $10,000 por violación (puede ser por cuenta, por año)
+  - Willful: hasta $100,000 o 50% del balance, per year
+
+<Callout type="danger" title="FBAR es la trampa más grande">
+Muchos clientes salvadoreños mantienen cuentas de ahorro en ES "para emergencias" o "para los padres". Siempre pregunta. La penalty por FBAR no presentado es más grande que los honorarios de 10 años.
+</Callout>
+
+## FATCA — Form 8938
+
+Similar a FBAR pero distinto:
+
+- Se presenta **con el 1040** (no FinCEN)
+- Umbral mucho mayor: $50k single o $100k MFJ viviendo en US
+- Umbrales más altos para americanos viviendo abroad
+- Incluye más tipos de assets que FBAR (PFICs, foreign mutual funds)
+- **Puede duplicarse con FBAR** — presenta AMBOS si aplican
+
+## Foreign Earned Income Exclusion (Form 2555)
+
+- Solo aplica si el taxpayer **vive fuera de USA** — es decir, para Americans abroad
+- **NO aplica a la diáspora** que vive en USA
+- Excluye hasta $126,500 (2024) de foreign earned income si cumple Physical Presence Test (330 días) o Bona Fide Residence Test
+
+## Foreign Tax Credit (Form 1116)
+
+- Para cuando un US resident paga impuestos a El Salvador sobre el mismo ingreso
+- Evita doble tributación
+- Caso típico: cliente vende propiedad en ES y paga impuesto salvadoreño, luego debe reportar la ganancia en USA
+
+## Matrix de decisión ITIN vs SSN
+
+```
+¿Tiene SSN válido para trabajo?
+├── Sí (US citizen, Green Card, TPS, DACA, work visa)
+│   └── Resident alien completo → todos los créditos
+└── No
+    ├── ¿Vive en USA con intención de quedarse?
+    │   └── Resident alien por SPT → tributación completa
+    │       └── Usa ITIN → NO califica EITC, SÍ CTC si hijo SSN
+    └── ¿Visita temporal?
+        └── Nonresident alien → 1040-NR, reglas diferentes
+```
+
+---
+
+**Siguiente**: cómo convertirte oficialmente en preparador de impuestos desde El Salvador.

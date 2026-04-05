@@ -1,0 +1,203 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Compliance and Risk Management
+
+What keeps you out of legal trouble. Violations here cost money, credential and reputation.
+
+## Circular 230 — the preparer's bible
+
+Treasury Department Circular 230 is the document regulating tax preparers. Key points:
+
+### Duties (Subpart B)
+
+- Prompt filing of returns
+- Use of "best practices"
+- No unconscionable fees
+- Notify clients of errors
+- No omission of required information
+
+### Restrictions (Subpart B)
+
+- Don't negotiate client refund checks
+- Don't prepare a return you know contains false info
+- Don't charge contingent fees on original returns
+- Don't solicit client information by deception
+
+### Sanctions (Subpart D)
+
+- Censure (public reprimand)
+- Suspension (up to 5 years)
+- Disbarment (permanent)
+- Monetary penalties
+
+**You must read Circular 230 at least once completely**. About 80 pages in English, available at irs.gov.
+
+## Form 8867 — Due Diligence for refundable credits
+
+<Callout type="danger" title="$635 penalty per omission (2024)">
+When claiming EITC, CTC, ACTC, AOTC, or HOH filing status, you MUST complete Form 8867 for each return. Each omission = **$635 penalty per credit per return**.
+
+A return with poorly-documented CTC + EITC + AOTC = **$1,905 penalty**. For a single client.
+</Callout>
+
+### What 8867 requires
+
+1. **Client interview** about eligibility
+2. **Document review** supporting eligibility
+3. **Knowledge requirement** — facts may be considered reasonable
+4. **Documentation retention** — keep 8867 and supports for 3 years
+
+### Required questions
+
+For EITC with qualifying child:
+
+- Did the child live with you more than half the year?
+- What documentation do you have (school records, medical, childcare)?
+- Can anyone else claim this child?
+- Did the child provide more than 50% of own support?
+
+For HOH:
+
+- Are you married? If yes, did you live apart for the last 6 months?
+- Did you pay more than 50% of maintaining the home?
+- Is there a qualifying person living with you?
+
+### Common supporting documents
+
+- School records (child's address)
+- Medical records
+- Childcare records
+- Social security cards
+- Birth certificates
+- Lease/utility bills (HOH)
+
+## §6694 — Understatement Penalties
+
+If you prepare a return with tax understatement (client owes more than reported):
+
+- **Negligent**: $1,000 or 50% of fee on the return (greater)
+- **Willful**: $5,000 or 75% of fee
+
+### How to protect yourself
+
+- **Reasonable basis**: position has at least 25% chance of being correct
+- **Substantial authority**: position has 40%+ chance
+- **More likely than not**: position is >50%
+- **Disclosure** on Form 8275 if position is "reasonable basis" but controversial
+
+## §6695 — Other Preparer Penalties
+
+Several violations with $60 penalties each (2024):
+
+- **§6695(a)**: Failure to furnish copy of return to taxpayer
+- **§6695(b)**: Failure to sign the return
+- **§6695(c)**: Failure to furnish PTIN on return
+- **§6695(d)**: Failure to retain copy or list
+- **§6695(e)**: Failure to file correct information returns
+- **§6695(f)**: Negotiating a check from IRS (refund) — $635
+- **§6695(g)**: Failure to be diligent with EITC/CTC/AOTC/HOH — $635
+
+These are simple but accumulate. If you do 100 returns and omit PTIN on all = $6,000 penalty.
+
+## E-file mandate
+
+- **11+ returns per year** → must e-file
+- Exceptions: client requests paper, return has attachments that don't support e-file, technical problems
+- Violation: $50/return up to $25,000 max
+
+## Data Security — IRS Pub 4557 + FTC Safeguards Rule
+
+### Mandatory WISP
+
+**Written Information Security Plan**. Since 2023 mandatory for all preparers.
+
+Must include:
+
+- Designation of a "qualified individual" (can be yourself if solo)
+- Annual risk assessment
+- Specific safeguards (encryption, access control, monitoring)
+- Vendor management
+- Incident response plan
+- Security awareness training
+- Continuous monitoring
+
+Free template: irs.gov/Publication 5708
+
+### Minimum technical safeguards
+
+- 2FA on every system with client data
+- Complex passwords (12+ characters)
+- Disk encryption (BitLocker/FileVault)
+- Network firewall
+- Updated antivirus
+- VPN for remote connections
+- Encrypted offsite backup
+- Auto-lock after 15 min inactivity
+- HTTPS-only
+- Secure deletion of obsolete data
+
+### Data breach response
+
+If you suffer a client data breach:
+
+1. **Contain** the incident (change passwords, isolate systems)
+2. **Contact IRS Stakeholder Liaison** — take this seriously
+3. **Contact FTC** if applicable
+4. **Notify affected clients** (FTC requires within 30 days in many cases)
+5. **Contact your E&O insurance** immediately
+6. **Consult a lawyer** specialized in data breach
+
+## Knowledge of client fraud
+
+If you discover the client gave you false information:
+
+- **Don't sign the return** if you know there are falsehoods
+- **Inform the client** — they have chance to correct
+- If client insists on filing with falsehoods: **terminate the relationship**
+- Document everything
+- Don't unilaterally report to IRS (confidentiality unless law enforcement asks)
+
+## Form 8300 — Cash reporting
+
+If you receive > $10,000 in cash or equivalent (money orders, cashier's checks) from a client:
+
+- Must file Form 8300 with IRS within 15 days
+- Also notify the client
+- This rule applies to preparers like any business
+
+## Record retention
+
+- **Prepared returns**: 3 years minimum (IRS)
+- **8867 and due diligence docs**: 3 years
+- **Engagement letters**: 3-7 years
+- **WISP and security docs**: indefinitely
+- **Some states require more** (NY 6 years, MD 4)
+
+## Preparer Misconduct / IRS OPR
+
+**Office of Professional Responsibility** at IRS handles disciplinary actions against preparers. If a client reports you:
+
+1. OPR investigates
+2. If meritorious, sends notice of charges
+3. Administrative process (like court but no jury)
+4. Penalty can be censure, suspension, disbarment, monetary
+
+**How to avoid this**: follow Circular 230 to the letter, document everything, keep signed engagement letters.
+
+## Annual compliance checklist
+
+- [ ] PTIN renewed
+- [ ] AFSP CE completed (if applicable)
+- [ ] E&O insurance active
+- [ ] Cyber liability active
+- [ ] WISP reviewed and updated
+- [ ] Passwords rotated
+- [ ] Backup verified
+- [ ] Vendor agreements reviewed
+- [ ] Engagement letter templates updated (year-specific)
+- [ ] Pricing sheet updated
+
+---
+
+**Next**: the complete annual tax calendar so you never miss a deadline.

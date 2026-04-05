@@ -1,0 +1,183 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+import { KeyDate } from '@/components/mdx/KeyDate'
+
+# Virginia: Form 760 y reglas estatales
+
+Virginia es el estado inicial de enfoque por la alta concentración de diáspora salvadoreña en **Northern Virginia** (Arlington, Alexandria, Annandale, Falls Church, Woodbridge, Manassas). Entender sus reglas específicas es crítico porque **Virginia no es como el federal**: tiene su propia agencia, sus propios formularios y — lo más importante — **su propio deadline**.
+
+<Callout type="danger" title="La trampa #1 de nuevos preparadores">
+Virginia vence el <strong>1 de mayo</strong>, no el 15 de abril. Preparadores nuevos asumen que todos los deadlines estatales coinciden con el federal. Marca esto en rojo.
+</Callout>
+
+## Virginia Department of Taxation
+
+La agencia es **Virginia Department of Taxation** (tax.virginia.gov), completamente separada del IRS. Tiene:
+
+- Su propio sistema de e-file (Virginia Tax Online Services)
+- Sus propios formularios serie 760
+- Sus propias auditorías
+- Sus propias tasas y umbrales
+
+No confundir con **Virginia Employment Commission** (desempleo, 1099-G) ni con **local Commissioner of the Revenue** (impuestos locales como business licenses).
+
+## ¿Quién debe presentar en Virginia?
+
+Virginia distingue tres tipos de contribuyentes:
+
+### 1. Resident — <FormRef id="VA-760" />
+
+Una persona es **resident** si:
+
+- Está **domiciled** en Virginia (su hogar permanente), O
+- Es **statutory resident**: mantiene un "place of abode" en VA **más de 183 días** del año
+
+Los domiciliados pagan VA tax sobre **ingresos mundiales** (all income, anywhere).
+
+### 2. Part-Year Resident — Form 760PY
+
+Se mudó a/desde Virginia durante el año. Divide ingresos entre el período VA y no-VA.
+
+### 3. Nonresident — Form 763
+
+Vive fuera de VA pero tuvo ingresos de fuente VA (ej. trabajo remoto con empleador en VA, rental en VA). Solo tributa sobre ingresos VA-source.
+
+<Callout type="warning" title="Status migratorio ≠ residencia fiscal VA">
+Un salvadoreño con ITIN que vive permanentemente en Annandale ES resident de Virginia para fines fiscales, sin importar su status migratorio. Virginia acepta ITINs y no pregunta sobre status migratorio.
+</Callout>
+
+## Tasas de Virginia (2024)
+
+Virginia usa un sistema progresivo de 4 brackets:
+
+| Taxable Income | Tasa |
+|---|---|
+| $0 – $3,000 | **2%** |
+| $3,001 – $5,000 | **3%** + $60 |
+| $5,001 – $17,000 | **5%** + $120 |
+| $17,001 + | **5.75%** + $720 |
+
+Tasa máxima: **5.75%**. Esto es moderado: inferior a MD (5.75% + local), NY (hasta 10.9%), CA (hasta 13.3%); superior a estados sin income tax (FL, TX).
+
+## Starting point: federal AGI
+
+Virginia parte del **Federal Adjusted Gross Income (FAGI)** y hace ajustes (additions y subtractions). Es decir: **si el federal está bien hecho, el VA es 80% trabajo automático**.
+
+### Additions típicas (suman al ingreso VA)
+
+- Interest on obligations of other states (no gravable federal, sí en VA)
+- Lump-sum distributions
+- Losses de años en que no fue residente VA
+
+### Subtractions típicas (restan del ingreso VA)
+
+- **Age deduction** para 65+
+- **Disability income** hasta $20,000
+- **Social Security benefits** — Virginia **NO grava** Social Security (gran ventaja)
+- Military basic pay (limitado)
+- Virginia 529 contributions
+
+## Deducciones y créditos VA
+
+### Deducción estándar VA
+
+- $8,500 single (2024)
+- $17,000 MFJ
+
+Virginia también permite itemized, pero debe coincidir con la elección federal (si itemized federal → debe itemized VA).
+
+### Credit for Taxes Paid to Other States
+
+Si el contribuyente es resident VA pero pagó impuestos a otro estado (ej. trabaja en MD), recibe un **crédito por el menor** entre lo pagado al otro estado y lo que hubiera pagado VA sobre ese ingreso.
+
+<Callout type="info" title="Reciprocidad: VA-DC-MD-KY-PA-WV">
+Virginia tiene **acuerdo de reciprocidad** con **DC, Maryland, Kentucky, Pennsylvania y West Virginia**. Esto significa:
+- Si vives en VA y trabajas en uno de estos estados, solo pagas VA tax sobre tus wages
+- El empleador del otro estado NO debe retener su impuesto estatal
+- El empleado presenta **Form VA-4** al empleador (o formulario equivalente del estado para exentar)
+- Si el empleador retuvo por error, el empleado reclama refund con el formulario de nonresident de ese estado
+
+Esto es **enormemente relevante en Northern Virginia**: miles de residentes de Arlington/Alexandria trabajan en DC. Solo declaran en VA.
+</Callout>
+
+### Virginia EITC
+
+Desde 2022 Virginia ofrece un **EITC reembolsable del 15% del federal** (el contribuyente puede elegir entre 15% refundable o 20% non-refundable). Debe calificar para el EITC federal primero — lo que significa **requiere SSN válido para trabajo**. ITIN holders no califican.
+
+### Low Income Individuals Credit (CLI)
+
+Crédito no reembolsable para contribuyentes bajo el federal poverty line. $300 por exención reclamada.
+
+## Impuestos locales en Virginia
+
+Virginia tiene muy pocos impuestos locales sobre income (a diferencia de MD donde cada county agrega 2-3%). Pero sí tiene:
+
+- **Real estate tax** (propiedad, pagado al county/city)
+- **Personal property tax** (vehículos, cada county)
+- **BPOL tax** (Business, Professional, Occupational License) si el cliente tiene negocio
+
+Como preparador de income tax, esto no te concierne directamente, pero deberías conocerlo para orientar a clientes con negocios.
+
+## Sales tax en Virginia
+
+5.3% base + 0.7% en localidades (Northern Virginia, Hampton Roads) = **6%** en NOVA. 2.5% en alimentos. No aplica a servicios profesionales. Como preparador, si tu cliente tiene retail, asegúrate que tenga sales tax permit con VA Tax.
+
+## Deadlines de Virginia
+
+<KeyDate date="May 1" label="Form 760 deadline (NO April 15)" />
+
+<KeyDate date="November 1" label="Extensión automática hasta 6 meses" />
+
+- **Extensión**: Virginia concede automáticamente **6 meses de extensión** sin necesidad de formulario, pero el pago estimado debe hacerse el 1 de mayo (Form 760IP)
+- **Estimated payments**: May 1, June 15, September 15, January 15 (trimestres ligeramente corridos vs federal)
+
+<Callout type="success" title="Buena práctica">
+Cuando preparas el 1040 federal en marzo/abril, prepara el 760 al mismo tiempo pero **reserva el envío hasta verificar que el federal fue aceptado por el IRS**. Así evitas re-work si hay correcciones.
+</Callout>
+
+## E-file de Virginia
+
+Virginia requiere e-file si preparas 50+ returns al año (el umbral federal es 10+). La mayoría de softwares profesionales (Drake, TaxSlayer Pro, ProSeries) incluyen VA e-file integrado.
+
+## Penalidades VA
+
+- **Late filing**: 6% del balance due por mes, hasta 30% max
+- **Late payment**: 6% interés anual + 6% penalty
+- **Underestimation**: si el estimated no llega al 90% del actual
+- **Fraud**: 100% del underpayment + criminal
+
+## Umbral de filing VA (2024)
+
+Debe presentar si Virginia AGI >:
+
+| Filing status | Umbral |
+|---|---|
+| Single | $11,950 |
+| MFJ | $23,900 |
+| Married dependiente | $5,950 |
+
+Por debajo de estos umbrales no es obligatorio presentar, pero conviene hacerlo si hay withholding retenido para recuperarlo como refund.
+
+## Formularios Virginia — resumen
+
+| Form | Uso |
+|---|---|
+| **760** | Full-year resident |
+| **760PY** | Part-year resident |
+| **763** | Nonresident (con ingresos VA-source) |
+| **763-S** | Nonresident Withholding Refund Claim (reciprocidad) |
+| **760C** | Underpayment of Estimated Tax |
+| **760IP** | Automatic Extension Payment |
+| **VA-4** | Employee's Withholding Certificate (equivalente a W-4) |
+| **500** | Corporation Income Tax Return |
+| **502** | Pass-Through Entity Return |
+
+## Recursos oficiales
+
+- **tax.virginia.gov** — autoridad oficial
+- **Virginia Tax Agency Directive** — interpretaciones de ley
+- **Virginia Publication** — guías por tópico
+
+---
+
+**Siguiente**: cómo manejar otros estados si tu práctica crece más allá de Virginia.

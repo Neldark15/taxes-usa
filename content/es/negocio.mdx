@@ -1,0 +1,176 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Montar el negocio: estructura legal
+
+Tres opciones para operar tu negocio de preparación de impuestos US desde El Salvador.
+
+## Opción A — Empresa en El Salvador (solo)
+
+Registras una Sociedad Anónima o simplemente operas como persona natural con NIT en El Salvador.
+
+### Pros
+
+- Simple y familiar
+- Sin compliance US
+- Sin costos de registered agent
+- Factura en USD desde ES (servicio exportado → potencial exención IVA del 13%)
+- Impuesto sobre renta ES: 30% sobre utilidades
+
+### Cons
+
+- **Clientes US pueden desconfiar** de pagar a empresa extranjera
+- Transferencias internacionales son más lentas/caras
+- No tienes "US presence" para marketing
+- Algunos clientes grandes te van a pedir W-9 (que no puedes dar correctamente sin EIN)
+
+### Cuándo tiene sentido
+
+- Estás empezando, pocos clientes
+- Clientes son todos referidos (confianza ya establecida)
+- No planeas escalar pronto
+
+## Opción B — LLC en USA ⭐ RECOMENDADO
+
+**Limited Liability Company** single-member (SMLLC) con tú como dueño único no-residente.
+
+### Qué estado elegir
+
+| Estado | Pros | Cons | Costo anual |
+|---|---|---|---|
+| **Wyoming (WY)** ⭐ | Más barato, alta privacidad, no revela dueños | — | ~$60 annual report |
+| **Delaware (DE)** | Prestigio corporativo, tribunales especializados | Más caro, franchise tax $300+ | $300+ |
+| **New Mexico (NM)** | Más barato aún, privacidad total | Menos prestigio | $0 annual (requiere reseller/agent) |
+| **Florida (FL)** | Buena reputación, sin state tax | $138.75 annual report | $138 |
+
+**Wyoming** es la elección típica para no-residentes que priorizan costo bajo + privacidad. Delaware tiene más "prestigio" pero es 5x más caro.
+
+### No elegir Virginia para el LLC
+
+Aunque tus clientes sean de Virginia, **NO formes el LLC en VA** para empezar. VA tiene:
+
+- Annual report fee ($50)
+- Requiere physical address en VA (tu registered agent)
+- BPOL tax (licencia profesional local) en algunas localities
+
+Solo tiene sentido VA si vas a tener presencia física o empleados allí.
+
+### Pasos para formar LLC Wyoming
+
+1. **Elegir nombre** (buscar disponibilidad en wyoming.gov/sos)
+2. **Registered Agent en WY** (obligatorio):
+   - Northwest Registered Agent ($125/año)
+   - Harbor Compliance ($89/año)
+   - Incfile ($119/año)
+   - Recomendación: Northwest por servicio de mail forwarding
+3. **Presentar Articles of Organization** — online, ~$100
+4. **Obtener EIN del IRS** — crítico, ver abajo
+5. **Operating Agreement** — privado pero recomendable
+6. **Abrir cuenta bancaria US**
+7. **Beneficial Ownership Information (BOI)** — nuevo reporting al FinCEN (actualmente en disputa legal, verificar estado en 2025+)
+
+### Obtener EIN sin SSN
+
+El EIN (Employer Identification Number) es el ID fiscal del LLC. **Sin EIN no puedes abrir cuenta bancaria ni hacer taxes del negocio**.
+
+**Problema**: el formulario online de IRS pide SSN del responsible party.
+
+**Solución**: <FormRef id="SS-4" /> en papel + fax
+
+1. Completar Form SS-4
+2. En línea 7b (SSN del responsible party), escribir "Foreign"
+3. Enviar por **fax** al IRS:
+   - International Fax: +1 (855) 215-1627 (puede cambiar, verificar en irs.gov)
+4. Esperar 4-6 semanas (también se puede por mail pero más lento)
+5. Recibir CP 575 notice con EIN
+
+<Callout type="success" title="Servicios de terceros">
+Servicios como Doola, Firstbase, StartPack o Wise Business hacen todo este proceso (LLC + EIN) por $300-500 y en 3-4 semanas. Vale la pena el costo para evitar errores en el SS-4.
+</Callout>
+
+### Abrir cuenta bancaria US sin viajar
+
+Bancos que aceptan LLCs de no-residentes online:
+
+- **Mercury** (mercury.com) — fintech, gratis, muy popular para LLCs extranjeras, requiere EIN
+- **Relay** (relayfi.com) — similar a Mercury
+- **Wise Business** — multi-currency, útil si clientes pagan en USD
+- **Bluevine** — también no-resident friendly
+
+Bancos tradicionales (Chase, BofA, Wells) **casi siempre requieren viajar a una sucursal en persona** y SSN o ITIN. No viables sin viaje.
+
+### Form 5472 + 1120 pro-forma — CRÍTICO
+
+<Callout type="danger" title="Penalidad $25,000">
+Todo Single-Member LLC con dueño extranjero es tratado como "disregarded entity" para income tax, PERO debe presentar <FormRef id="5472" /> cada año + un Form 1120 "pro-forma" (solo con info de identificación).
+
+**Penalidad por no presentar: $25,000 por año**. Esta es la trampa más grande y costosa de una LLC de no-residente.
+</Callout>
+
+- Form 5472 reporta transacciones entre el LLC y el foreign owner (transferencias, préstamos, pagos, distribuciones)
+- Se presenta **junto con** Form 1120 en papel (no e-file) al IRS Ogden UT
+- Deadline: Apr 15 (con extensión via Form 7004 hasta Oct 15)
+- OBLIGATORIO incluso si el LLC no tuvo ingresos ni actividad significativa
+
+### Income tax del LLC
+
+- SMLLC con foreign owner = **disregarded entity**
+- El income "fluye" al dueño como nonresident alien
+- **Si el servicio se realiza completamente fuera de USA** (tú en El Salvador), generalmente NO hay ECI (Effectively Connected Income) → NO hay US income tax federal
+- PERO esta área es compleja — consulta con un CPA especializado en no-residentes antes de asumir
+- Posible necesidad de ITIN personal si hay income US-source
+
+## Opción C — Híbrido (recomendado a mediano plazo)
+
+Estructura doble:
+
+1. **LLC en Wyoming** (brazo comercial para clientes US):
+   - Tiene EIN, cuenta bancaria US
+   - Factura servicios a clientes US
+   - Ingresos caen en el LLC
+2. **Empresa en El Salvador** (operación real):
+   - Donde vives y trabajas
+   - El LLC paga una "management fee" a la empresa ES por servicios prestados
+   - Los impuestos se pagan en ES sobre la utilidad
+
+Esta estructura requiere bookkeeping bilateral y transfer pricing justo, pero es óptima para escalar.
+
+## E&O insurance (Errors and Omissions)
+
+**CRÍTICO**. Cualquier preparador debe tenerlo.
+
+- Cubre demandas por errores en returns preparados
+- Costo: $400-800/año (empiezo)
+- Proveedores: PICPA, Accountants Professional Liability, Hiscox, 360 Coverage Pros
+- **Algunos proveedores requieren US address** — verifica antes de formar el LLC
+
+## Cyber liability insurance
+
+- Cubre data breaches (clientes tienen SSN y documentos sensibles)
+- ~$300-500/año
+- OBLIGATORIO bajo **FTC Safeguards Rule** (aplica a todos los preparadores)
+
+## Engagement letter
+
+Contrato con cada cliente que define:
+
+- Servicios incluidos
+- Honorarios y términos de pago
+- Responsabilidades del cliente (entregar documentos veraces)
+- Limitación de tu responsabilidad
+- Data privacy
+- Jurisdicción (si eres LLC WY, especifica)
+
+Templates disponibles en: AICPA, NATP, tu software (TaxDome incluye plantillas).
+
+## GLBA Privacy — Gramm-Leach-Bliley Act
+
+Aplica a preparadores por ser "financial institutions" según la FTC:
+
+- Debes tener **Privacy Notice** para clientes
+- **WISP** (Written Information Security Plan) — ver cap. 10
+- Data breach notification si ocurre
+
+---
+
+**Siguiente**: el stack de software y herramientas profesionales.

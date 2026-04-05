@@ -1,0 +1,134 @@
+import { Callout } from '@/components/mdx/Callout'
+import { FormRef } from '@/components/mdx/FormRef'
+
+# Key Forms
+
+This is your basic kit. Know each one well — what it collects, where it goes in the 1040, what common errors exist.
+
+## Income documents the client receives
+
+### <FormRef id="W-2" /> — Wages and Tax Statement
+
+- Employer to employee (by Jan 31)
+- Box 1 = wages, Box 2 = federal withholding
+- Boxes 3-6 = Social Security and Medicare wages/tax
+- Box 12 = special codes (401k = D, HSA = W, etc.)
+- Boxes 15-17 = state info
+
+### <FormRef id="1099-NEC" /> — Nonemployee Compensation
+
+- Independent contractors, freelancers
+- $600/year minimum threshold to issue
+- **Reported on Schedule C**, not as wages
+- Box 1 = total amount
+
+### <FormRef id="1099-MISC" /> — Miscellaneous Information
+
+- Rents, royalties, prizes, awards, gross proceeds to attorneys
+- Box 1 = rents (→ Schedule E)
+- Box 3 = other income (→ Schedule 1)
+
+### <FormRef id="1099-K" /> — Payment Card & Third Party
+
+- From Stripe, PayPal, Venmo Business, Etsy, eBay, Uber, Lyft
+- Current federal threshold $5,000 (2024, phasing down to $600)
+- **Warning**: may duplicate with 1099-NEC — must reconcile
+- → Schedule C typically
+
+### Other 1099s
+
+- **1099-INT** — interest income (Schedule B if > $1,500)
+- **1099-DIV** — dividends (Schedule B if > $1,500)
+- **1099-R** — retirement distributions (IRA, 401k, pension)
+- **SSA-1099** — Social Security benefits (up to 85% taxable)
+- **1099-G** — unemployment, state refund
+- **1099-B** — broker sales (Schedule D)
+- **1099-S** — real estate sale
+
+### Deduction documents
+
+- **1098** — mortgage interest (itemized)
+- **1098-T** — tuition (AOTC/LLC education credits)
+- **1098-E** — student loan interest (up to $2,500 above-the-line)
+- **5498** — IRA contributions (informational)
+
+## 1040 Schedules
+
+| Schedule | Title | What it reports |
+|---|---|---|
+| **1** | Additional Income and Adjustments | Business income, alimony, capital loss, educator expenses, HSA, IRA, student loan interest |
+| **2** | Additional Taxes | SE tax, additional Medicare, excess HSA |
+| **3** | Additional Credits and Payments | Foreign tax credit, dependent care, education, retirement savings contribution |
+| **A** | Itemized Deductions | Medical, SALT (capped $10k), mortgage, charity, casualty |
+| **B** | Interest and Dividends | If > $1,500 or foreign accounts |
+| **C** | Profit or Loss from Business | Self-employed income and expenses |
+| **D** | Capital Gains and Losses | Stock, crypto, real estate sales |
+| **E** | Supplemental Income | Rental, royalty, K-1 partnership/S-corp |
+| **SE** | Self-Employment Tax | 15.3% on net SE income |
+
+## Special forms for the diaspora
+
+### <FormRef id="W-7" /> — Application for ITIN
+
+For dependents, spouses or the taxpayer themselves without SSN:
+
+- Filed **together with** the 1040 (not separately)
+- Documents: passport (original or certified by CAA or issuer) or combination of two (birth cert + foreign ID)
+- **CAA (Certifying Acceptance Agent)** can certify documents without sending originals to IRS — business opportunity for the preparer
+- Takes 6-11 weeks to receive ITIN
+
+<Callout type="tip" title="CAA: opportunity for your business">
+Becoming a CAA lets you certify ITIN documents for clients so they don't have to send their passport to the IRS. It's a powerful differentiator in the diaspora community. Requires Form 13551 and IRS-approved course.
+</Callout>
+
+### <FormRef id="8867" /> — Paid Preparer Due Diligence Checklist
+
+**MANDATORY** when claiming:
+
+- EITC
+- CTC/ACTC
+- AOTC
+- HOH filing status
+
+Each omission = **$635 penalty** (2024, indexed annually). **Per return**. Four credits wrong = $2,540 for a single return.
+
+### <FormRef id="8879" /> — IRS e-file Signature Authorization
+
+Client's electronic signature authorizing you to e-file for them. **NOT optional** — client MUST sign before transmission.
+
+- Valid only for the tax year in question
+- Must keep for 3 years
+- Every schedule/form on the return must be reflected
+
+### <FormRef id="4868" /> — Extension
+
+Covered in ch. 01. Only extends filing, not payment.
+
+### <FormRef id="1040-X" /> — Amended Return
+
+- To correct an already-filed return
+- Must include comparison (columns A/B/C: original / change / corrected)
+- Must explain changes in Part III
+- 3-year limit to claim refund
+
+## Income sources to probe in intake
+
+Mental checklist when interviewing the client:
+
+- [ ] W-2 employment
+- [ ] 1099-NEC contractor
+- [ ] Self-employment without 1099 (cash)
+- [ ] Rental property
+- [ ] Investment accounts (brokerage)
+- [ ] Crypto activity
+- [ ] Retirement distributions
+- [ ] Social Security
+- [ ] Unemployment
+- [ ] Gambling winnings (W-2G)
+- [ ] Foreign income (watch FTC / 2555)
+- [ ] Foreign accounts (FBAR / 8938)
+- [ ] Cancellation of debt (1099-C)
+
+---
+
+**Next**: special Salvadoran diaspora cases you'll encounter daily.

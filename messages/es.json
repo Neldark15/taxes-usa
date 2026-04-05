@@ -1,0 +1,123 @@
+{
+  "app": {
+    "name": "TAXES USA",
+    "tagline": "Aprende a preparar impuestos de USA para la diáspora salvadoreña",
+    "disclaimer": "Herramienta educativa. No sustituye asesoría legal ni fiscal. Valida datos con irs.gov y tax.virginia.gov."
+  },
+  "nav": {
+    "home": "Inicio",
+    "learn": "Aprender",
+    "process": "Proceso",
+    "flashcards": "Flashcards",
+    "exam": "Examen EA",
+    "checklists": "Checklists",
+    "fees": "Honorarios"
+  },
+  "home": {
+    "welcome": "Bienvenido",
+    "subtitle": "Sistema interactivo de aprendizaje para preparadores de impuestos US",
+    "chaptersProgress": "Capítulos completados",
+    "quizAverage": "Promedio de quizzes",
+    "flashcardsDue": "Flashcards pendientes",
+    "lastExam": "Último simulacro EA",
+    "checklistsProgress": "Checklists completados",
+    "continueLearning": "Continuar aprendiendo",
+    "startHere": "Empezar aquí",
+    "features": {
+      "learn": "11 capítulos estructurados sobre taxes federales, Virginia, diáspora y negocio",
+      "process": "Guía paso a paso del proceso completo del negocio, desde captación hasta entrega",
+      "flashcards": "Memorización con repetición espaciada (algoritmo SM-2)",
+      "exam": "Simulacro de examen Enrolled Agent (3 partes)",
+      "checklists": "Listas interactivas para onboarding, PTIN, LLC, compliance",
+      "fees": "Calculadora de honorarios basada en NATP y mercado diáspora"
+    }
+  },
+  "learn": {
+    "title": "Capítulos de estudio",
+    "subtitle": "Aprende los fundamentos del sistema fiscal de USA paso a paso",
+    "minutes": "min",
+    "completed": "Completado",
+    "quiz": "Quiz del capítulo",
+    "markComplete": "Marcar como completado",
+    "nextChapter": "Siguiente capítulo",
+    "prevChapter": "Capítulo anterior"
+  },
+  "flashcards": {
+    "title": "Flashcards",
+    "subtitle": "Repetición espaciada para memorizar formularios, fechas y conceptos",
+    "due": "Pendientes",
+    "new": "Nuevas",
+    "learning": "Aprendiendo",
+    "mature": "Consolidadas",
+    "startReview": "Empezar sesión",
+    "noCardsDue": "No hay tarjetas pendientes. ¡Vuelve mañana!",
+    "showAnswer": "Mostrar respuesta",
+    "again": "Otra vez",
+    "hard": "Difícil",
+    "good": "Bien",
+    "easy": "Fácil",
+    "sessionComplete": "Sesión completada"
+  },
+  "exam": {
+    "title": "Simulacro Examen EA",
+    "subtitle": "Practica para el Special Enrollment Examination del IRS",
+    "part1": "Parte 1: Individuals",
+    "part2": "Parte 2: Businesses",
+    "part3": "Parte 3: Representation, Practices, Procedures",
+    "modePractice": "Modo práctica",
+    "modeSimulation": "Modo simulacro",
+    "modePracticeDesc": "Sin timer, feedback inmediato",
+    "modeSimulationDesc": "Con timer real, sin feedback hasta el final",
+    "startExam": "Comenzar",
+    "timeRemaining": "Tiempo restante",
+    "question": "Pregunta",
+    "of": "de",
+    "submit": "Enviar respuestas",
+    "score": "Puntaje",
+    "passing": "Aprobado: 105 (scaled 40-130)"
+  },
+  "checklists": {
+    "title": "Checklists Interactivos",
+    "subtitle": "Listas accionables para los procesos clave del negocio",
+    "progress": "progreso",
+    "reset": "Reiniciar",
+    "print": "Imprimir"
+  },
+  "fees": {
+    "title": "Calculadora de Honorarios",
+    "subtitle": "Cotiza clientes basado en formularios, schedules y complejidad",
+    "baseReturn": "Return base",
+    "schedules": "Schedules",
+    "states": "Estados adicionales",
+    "dependents": "Dependientes",
+    "addons": "Add-ons",
+    "complexity": "Complejidad",
+    "simple": "Simple",
+    "medium": "Medio",
+    "complex": "Complejo",
+    "preset": "Preset de mercado",
+    "presetNatp": "NATP promedio USA",
+    "presetDiaspora": "Diáspora competitivo",
+    "presetCustom": "Personalizado",
+    "discount": "Descuento",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "copyQuote": "Copiar cotización",
+    "saveQuote": "Guardar",
+    "settings": "Personalizar tarifas",
+    "quoteCopied": "¡Cotización copiada!",
+    "disclaimer": "Circular 230 §10.27: prohibido cobrar porcentaje del refund en returns federales originales."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "start": "Empezar"
+  }
+}

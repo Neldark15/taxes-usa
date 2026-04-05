@@ -1,0 +1,123 @@
+{
+  "app": {
+    "name": "TAXES USA",
+    "tagline": "Learn to prepare US taxes for the Salvadoran diaspora",
+    "disclaimer": "Educational tool. Not legal or tax advice. Validate data against irs.gov and tax.virginia.gov."
+  },
+  "nav": {
+    "home": "Home",
+    "learn": "Learn",
+    "process": "Process",
+    "flashcards": "Flashcards",
+    "exam": "EA Exam",
+    "checklists": "Checklists",
+    "fees": "Fees"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "Interactive learning system for US tax preparers",
+    "chaptersProgress": "Chapters completed",
+    "quizAverage": "Quiz average",
+    "flashcardsDue": "Flashcards due",
+    "lastExam": "Last EA mock exam",
+    "checklistsProgress": "Checklists completed",
+    "continueLearning": "Continue learning",
+    "startHere": "Start here",
+    "features": {
+      "learn": "11 structured chapters on federal taxes, Virginia, diaspora and business",
+      "process": "Step-by-step complete business process guide, from acquisition to delivery",
+      "flashcards": "Memorization with spaced repetition (SM-2 algorithm)",
+      "exam": "Enrolled Agent exam simulator (3 parts)",
+      "checklists": "Interactive lists for onboarding, PTIN, LLC, compliance",
+      "fees": "Fee calculator based on NATP and diaspora market"
+    }
+  },
+  "learn": {
+    "title": "Study Chapters",
+    "subtitle": "Learn the fundamentals of the US tax system step by step",
+    "minutes": "min",
+    "completed": "Completed",
+    "quiz": "Chapter quiz",
+    "markComplete": "Mark as complete",
+    "nextChapter": "Next chapter",
+    "prevChapter": "Previous chapter"
+  },
+  "flashcards": {
+    "title": "Flashcards",
+    "subtitle": "Spaced repetition to memorize forms, dates and concepts",
+    "due": "Due",
+    "new": "New",
+    "learning": "Learning",
+    "mature": "Mature",
+    "startReview": "Start session",
+    "noCardsDue": "No cards due. Come back tomorrow!",
+    "showAnswer": "Show answer",
+    "again": "Again",
+    "hard": "Hard",
+    "good": "Good",
+    "easy": "Easy",
+    "sessionComplete": "Session complete"
+  },
+  "exam": {
+    "title": "EA Exam Simulator",
+    "subtitle": "Practice for the IRS Special Enrollment Examination",
+    "part1": "Part 1: Individuals",
+    "part2": "Part 2: Businesses",
+    "part3": "Part 3: Representation, Practices, Procedures",
+    "modePractice": "Practice mode",
+    "modeSimulation": "Simulation mode",
+    "modePracticeDesc": "No timer, immediate feedback",
+    "modeSimulationDesc": "Real timer, no feedback until the end",
+    "startExam": "Start",
+    "timeRemaining": "Time remaining",
+    "question": "Question",
+    "of": "of",
+    "submit": "Submit answers",
+    "score": "Score",
+    "passing": "Passing: 105 (scaled 40-130)"
+  },
+  "checklists": {
+    "title": "Interactive Checklists",
+    "subtitle": "Actionable lists for key business processes",
+    "progress": "progress",
+    "reset": "Reset",
+    "print": "Print"
+  },
+  "fees": {
+    "title": "Fee Calculator",
+    "subtitle": "Quote clients based on forms, schedules and complexity",
+    "baseReturn": "Base return",
+    "schedules": "Schedules",
+    "states": "Additional states",
+    "dependents": "Dependents",
+    "addons": "Add-ons",
+    "complexity": "Complexity",
+    "simple": "Simple",
+    "medium": "Medium",
+    "complex": "Complex",
+    "preset": "Market preset",
+    "presetNatp": "NATP US average",
+    "presetDiaspora": "Diaspora competitive",
+    "presetCustom": "Custom",
+    "discount": "Discount",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "copyQuote": "Copy quote",
+    "saveQuote": "Save",
+    "settings": "Customize rates",
+    "quoteCopied": "Quote copied!",
+    "disclaimer": "Circular 230 §10.27: contingent fees (percentage of refund) are prohibited on original federal returns."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "start": "Start"
+  }
+}
